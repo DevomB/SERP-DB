@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DevToolDisabler from "../../components/DevToolDisabler/DevToolDisabler";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SERP DB",
