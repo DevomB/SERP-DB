@@ -6,8 +6,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-    },
+    extend: {}
+  },
+  daisyui: { // Add Daisy UI themes if wanted
+    themes: [],
   },
   plugins: [
     require('daisyui'),

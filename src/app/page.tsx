@@ -1,6 +1,4 @@
-import Image from "next/image"; // For BG
-import ProjectCard from "@components/ProjCard/ProjCard";
-
+import NavBarNoLogin from "@components/NavBarNoLogin/NavBarNoLogin";
 export default function Home() {
-	return (<ProjectCard/>);
+	return <NavBarNoLogin/>;
 }

@@ -3,26 +3,27 @@ import { useEffect } from "react";
 
 const DevToolDisabler = ({ children }) => {
 	useEffect(() => {
-		// Disable F12 (Developer Tools) and other key combinations if needed
-		const handleKeyPress = (e) => {
-			if (e.key === "F12" || e.ctrlKey || e.shiftKey) {
-				// Example for additional keys
+		if (process.env.NODE_ENV === "production") {
+			// Disable F12 (Developer Tools) and other key combinations if needed
+			const handleKeyPress = (e) => {
+				if (e.key === "F12" || e.ctrlKey || e.shiftKey) {
+					e.preventDefault();
+				}
+			};
+
+			// Disable context menu
+			const handleContextMenu = (e) => {
 				e.preventDefault();
-			}
-		};
+			};
 
-		// Disable context menu
-		const handleContextMenu = (e) => {
-			e.preventDefault();
-		};
+			document.addEventListener("keydown", handleKeyPress);
+			document.addEventListener("contextmenu", handleContextMenu);
 
-		document.addEventListener("keydown", handleKeyPress);
-		document.addEventListener("contextmenu", handleContextMenu);
-
-		return () => {
-			document.removeEventListener("keydown", handleKeyPress);
-			document.removeEventListener("contextmenu", handleContextMenu);
-		};
+			return () => {
+				document.removeEventListener("keydown", handleKeyPress);
+				document.removeEventListener("contextmenu", handleContextMenu);
+			};
+		}
 	}, []);
 
 	return <>{children}</>;

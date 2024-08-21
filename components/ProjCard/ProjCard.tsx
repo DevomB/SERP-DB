@@ -2,7 +2,7 @@
 import { UUID } from "crypto";
 
 type cardProps = {
-	UUID: UUID;
+	UUID?: UUID;
 };
 
 const ProjectCard = ({ UUID }: cardProps) => {
