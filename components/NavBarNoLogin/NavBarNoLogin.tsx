@@ -2,7 +2,7 @@
 import SDB_Logo from "@components/SDBLogo-SVG/logo";
 import { useState } from "react";
 
-export default () => {
+const NavBar = () => {
 	const [state, setState] = useState(false);
 
 	// Replace javascript:void(0) path with your path
@@ -93,3 +93,5 @@ export default () => {
 		</nav>
 	);
 };
+
+export default NavBar;
