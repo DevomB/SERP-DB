@@ -7,10 +7,10 @@ const NavBar = () => {
 
 	// Replace javascript:void(0) path with your path
 	const navigation = [
-		{ title: "Customers", path: "javascript:void(0)" },
-		{ title: "Careers", path: "javascript:void(0)" },
-		{ title: "Guides", path: "javascript:void(0)" },
-		{ title: "Partners", path: "javascript:void(0)" },
+		{ title: "Database", path: "javascript:void(0)" },
+		{ title: "AI Helper", path: "javascript:void(0)" },
+		{ title: "API Docs", path: "javascript:void(0)" },
+		{ title: "About Us", path: "javascript:void(0)" },
 	];
 
 	return (
@@ -95,3 +95,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+// https://floatui.com/components/navbars (Primary Navbar)

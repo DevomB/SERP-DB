@@ -1,4 +1,5 @@
-import NavBarNoLogin from "@components/NavBarNoLogin/NavBarNoLogin";
+import SearchBar from "@components/SearchBar/SearchBar";
+
 export default function Home() {
-	return <NavBarNoLogin/>;
+	return <SearchBar/>;
 }

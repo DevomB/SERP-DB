@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import DevToolDisabler from "../../components/DevToolDisabler/DevToolDisabler";
 import './globals.css';
+import NavBarNoLogin from "@components/NavBar/NavBarNoLogin/NavBarNoLogin";
 
 export const metadata: Metadata = {
   title: "SERP DB",
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <DevToolDisabler>
         <body>
+          <NavBarNoLogin/>
           {children}
         </body>
       </DevToolDisabler>
