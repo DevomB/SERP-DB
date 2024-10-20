@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import DevToolDisabler from "../../components/DevToolDisabler/DevToolDisabler";
+import DevToolDisabler from "@/components/DevToolDisabler/DevToolDisabler";
 import './globals.css';
-import NavBarNoLogin from "@components/NavBar/NavBarNoLogin/NavBarNoLogin";
 
 export const metadata: Metadata = {
   title: "SERP DB",
-  description: "Your SERP inspiration database", // This is a tenative desc.
+  description: "Your SERP inspiration database", 
 };
 
 export default function RootLayout({
@@ -17,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <DevToolDisabler>
         <body>
-          <NavBarNoLogin/>
           {children}
         </body>
       </DevToolDisabler>

@@ -1,5 +1,5 @@
 'use client';
-import SDB_Logo from "@components/SDBLogo-SVG/logo";
+import SDB_Logo from "@/components/SDBLogo-SVG/logo";
 import { useState } from "react";
 
 const NavBar = () => {

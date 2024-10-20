@@ -1,13 +1,6 @@
 // We are gonna use Daisy UI card ----- https://daisyui.com/components/card/
-import { UUID } from "crypto";
 
-type cardProps = {
-	UUID?: UUID;
-};
-
-const ProjectCard = ({ UUID }: cardProps) => {
-	// Add a Fetch for Cloudflare R2 and Postgre
-
+const ProjectCard = () => {
 	return (
 		// Add the glass property as seen on the glass card here https://daisyui.com/components/card/#card-glass
 		<div className="card bg-base-100 w-96 shadow-xl">
